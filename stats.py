@@ -10,3 +10,6 @@ def get_char_list(book_text):
             continue
         char_list[char] += 1
     return char_list
+
+def sort_char_list(char_list):
+    return dict(sorted(char_list.items(), key=lambda item: item[1], reverse=True))
